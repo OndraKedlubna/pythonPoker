@@ -1,0 +1,16 @@
+pylint -r y test.py
+pip install jmeno_knihovny
+
+testy:
+python test_hand.py TestHand.test_add_card
+python -m unittest cardpackage.test_deck
+python -m unittest cardpackage.test_game.TestGame.test_validate_good
+
+
+Mocky:
+https://python-mock-tutorial.readthedocs.io/en/latest/mock.html
+https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock
+https://docs.python-guide.org/writing/tests/
+
+private:
+https://www.bogotobogo.com/python/python_private_attributes_methods.php
